@@ -225,6 +225,7 @@ footer {
 main {
     min-height: 100vh;
     color: white;
+    background: var(--bg-gradient);
 }
 
 .container {
@@ -283,7 +284,6 @@ section {
 
 .key-activities {
     padding: 5rem 0;
-    background-color: rgba(235, 201, 140, 0.1);
 }
 
 .about-hero {

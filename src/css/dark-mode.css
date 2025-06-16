@@ -32,10 +32,6 @@
         color: var(--text-color);
     }
 
-    header, footer {
-        background-color: #0d374c; /* Dark header and footer */
-    }
-
     a {
         color: #ebc98c; /* Light color for links */
     }
@@ -52,10 +48,6 @@
 
     button:hover {
         opacity: 0.9;
-    }
-
-    section {
-        background-color: #071623; /* Dark section background */
     }
 
     .card {
@@ -120,10 +112,5 @@
     .team-card h3,
     .product-card h3 {
         color: var(--text-color);
-    }
-
-    .team-section,
-    .contact-section {
-        background-color: var(--light-bg);
     }
 }
