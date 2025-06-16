@@ -1,0 +1,20 @@
+{
+  "name": "modern-farm-website",
+  "version": "1.0.0",
+  "description": "A simple modern website for AROMA POWER RAISE PRIVATE LIMITED, an aroma oil manufacturing and cultivating company.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'"
+  },
+  "keywords": [
+    "farming",
+    "aroma oils",
+    "website"
+  ],
+  "author": "AROMA POWER RAISE PRIVATE LIMITED",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
