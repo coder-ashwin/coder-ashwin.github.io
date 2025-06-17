@@ -55,24 +55,19 @@ footer {
     z-index: 1000;
     padding: 1.5rem;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--nav-bg);
 }
 
-footer {
-    padding: 2rem 0;
-    margin-top: auto;
-    width: 100%;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Make navbar transparent only on home page */
-.is-home .navbar {
+.navbar.transparent {
     background-color: transparent;
     box-shadow: none;
 }
 
-.is-home .navbar.scrolled {
+.navbar.scrolled {
     background-color: var(--nav-bg);
+}
+
+.navbar.nav-shadow {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -305,16 +300,8 @@ section {
 }
 
 .team-section {
-    padding: 6rem 0;
+    padding: 7.5rem 0 !important;
     background-color: var(--light-bg);
-}
-
-.team-category {
-    margin-bottom: 5rem;
-}
-
-.team-category:last-child {
-    margin-bottom: 0;
 }
 
 .team-grid {
@@ -355,9 +342,14 @@ section {
     justify-content: space-between;
 }
 
+.team-card-content .position {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+    margin-top: 0.25rem;
+}
+
 .team-category {
     text-align: center;
-    margin-bottom: 3rem;
 }
 
 .team-category h2 {
@@ -473,33 +465,46 @@ section {
 
 /* Contact Page */
 .contact-info {
-    padding: 4rem 0;
+    padding: 7.5rem 0 !important;
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 2fr;
     gap: 2rem;
-    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.contact-card.map {
+    grid-column: span 2;
 }
 
 .contact-card {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 8px;
-    color: var(--text-color);
+    backdrop-filter: blur(10px);
 }
 
 .contact-card h2 {
+    color: var(--secondary-color);
     margin-bottom: 1rem;
-    color: var(--text-color);
 }
 
 .contact-card p {
     margin-bottom: 0.5rem;
-    color: var(--text-color);
+}
+
+.contact-details-group {
+    margin-bottom: 2rem;
+}
+
+.contact-details-group:last-child {
+    margin-bottom: 0;
+}
+
+.contact-card.map iframe {
+    min-height: 400px;
 }
 
 .contact-form {
